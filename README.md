@@ -1,0 +1,1 @@
+# smartphonetyp_ur
