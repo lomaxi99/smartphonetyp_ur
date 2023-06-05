@@ -28,7 +28,7 @@ Tip: Test the connection by pinging the robot.
 ping 192.168.1.102
 ```
 
-## How to establish the ros2 connection
+## How to establish the ROS2 connection
 Note: Robot should be in home position!
 
 **Robot**:\
