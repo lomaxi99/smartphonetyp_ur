@@ -41,4 +41,18 @@ Start `ur10.launch.py` in one terminal.
 ros2 launch ur_bringup ur10.launch.py robot_ip:=192.168.1.102 launch_rviz:=true
 ```
 
+## How to run a demo script
+Starting a demo script to see if the conection was established
+
+```
+ros2 launch ur_bringup test_joint_trajectory_controller.launch.py
+```
+
+## How to controll the io ports
+Enable the vaccum gripper by calling the `/io_and_status_contorller/set_io ur_msgs/` service and setting pin 5 either to 1 or to 0.
+```
+ros2 service call /io_and_status_contorller/set_io ur_msgs/srv/SetIO "{fun: 1, pin: 5, state: 1}"
+```
+
+
 ## How to run the script for taking photos
