@@ -31,15 +31,24 @@ ping 192.168.1.102
 ## How to establish the ROS2 connection
 Note: Robot should be in home position!
 
-**Robot**:\
-Start `ros2.udf` on the robot. The appearing error message can be ignored.
-
 **Computer**:\
-Start `ur10.launch.py` in one terminal.
+First start `ur_control.launch.py` in one termial.
+
+```
+ros2 launch ur_bringup ur_control.launch.py ur_type:=ur5e robot_ip:=192.168.1.102 use_fake_hardware:=false launch_rviz:=false
+```
+
+Then start `ur10.launch.py` in another terminal.
 
 ```
 ros2 launch ur_bringup ur10.launch.py robot_ip:=192.168.1.102 launch_rviz:=true
 ```
+
+
+**Robot**:\
+Start `ros2.udf` program on the robot.
+
+
 
 ## How to run a demo script
 Starting a demo script to see if the conection was established
