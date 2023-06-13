@@ -35,7 +35,7 @@ Note: Robot should be in home position!
 First start `ur_control.launch.py` in one termial.
 
 ```
-ros2 launch ur_bringup ur_control.launch.py ur_type:=ur5e robot_ip:=192.168.1.102 use_fake_hardware:=false launch_rviz:=false
+ros2 launch ur_bringup ur_control.launch.py ur_type:=ur10 robot_ip:=192.168.1.102 use_fake_hardware:=false launch_rviz:=false
 ```
 
 Then start `ur10.launch.py` in another terminal.
